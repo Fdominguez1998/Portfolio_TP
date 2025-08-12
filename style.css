@@ -2,12 +2,16 @@ body {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 .wrapper {
   width: 100%;
   height: 100vh;
   background-color: black;
   display: flex;
   flex-direction: column;
+  font-family: Verdana, Tahoma, sans-serif;
 }
 
 .header_sticky {
@@ -37,23 +41,54 @@ body {
 
 .home {
   width: 100%;
-  height: 250px;
-  background-color: chartreuse;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #242342;
 }
 
 .skills {
   width: 100%;
-  height: 250px;
+
   background-color: azure;
+  display: flex;
+  align-items: center;
 }
 .about_me {
   width: 100%;
-
   background-color: rgb(240, 228, 211);
+  display: flex;
+  padding: 0 5%;
+  box-sizing: border-box;
 }
 
 .about_me img {
   width: 300px;
+  border: 10px solid red;
+  border-radius: 50px;
+}
+
+.about_me p {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.about_me h1 {
+  font-size: 35px;
+  display: flex;
+  align-items: start;
+}
+.column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 .projects {
   width: 100%;
@@ -64,4 +99,22 @@ body {
   width: 100%;
   height: 250px;
   background-color: violet;
+}
+
+.fa-brands {
+  font-size: 150px;
+}
+
+.fa-css3-alt {
+  color: blue;
+}
+
+.fa-square-js {
+  color: yellow;
+}
+.fa-python {
+  color: lightskyblue;
+}
+.fa-html5 {
+  color: orange;
 }

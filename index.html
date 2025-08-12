@@ -3,40 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1484879c62.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="wrapper">
       <div class="header_sticky">
         <div class="nav_bar">
           <div class="button">
-            <div class="home_button">Home</div>
-            <div class="about_me_button">About Me</div>
-            <div class="skills_button">Skills</div>
-            <div class="projects_button">Projects</div>
-            <div class="contact_button">Contact</div>
+            <a href="#home" class="home_button">Home</a>
+            <a href="#about_me" class="about_me_button">About Me</a>
+            <a href="#skills" class="skills_button">Skills</a>
+            <a href="#projects" class="projects_button">Projects</a>
+            <a href="#contact" class="contact_button">Contact</a>
           </div>
         </div>
       </div>
-      <div class="home">
-        <h1>Home</h1>
-        <p>Home</p>
+      <div class="home" id="home">
+        <img src="img/imagen_header.png" alt="header" />
       </div>
-      <div class="about_me">
-        <h1>Sobre mi</h1>
-        <p>Mi nombre es Franco dominguez, estudiante de programacion,</p>
-        <img src="img/franco_ia.png" alt="Imagen" />
+      <div class="about_me" id="about_me">
+        <div class="column">
+          <h1>Sobre mi</h1>
+          <div class="row">
+            <img src="img/franco_ia.png" alt="Imagen" />
+            <p>
+              Mi nombre es Franco Dominguez, soy estudiante de programacion,
+              busco descubrir nuevos conocimientos y herramientas para mejorar y
+              aprender a resolver disintos problemas
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="skills">
+      <div class="skills column" id="skills">
         <h1>Habilidades</h1>
-        <p>Habilidades</p>
+        <div class="icons row">
+          <i class="fa-brands fa-css3-alt"></i>
+          <i class="fa-brands fa-square-js"></i>
+          <i class="fa-brands fa-python"></i>
+          <i class="fa-brands fa-html5"></i>
+        </div>
       </div>
-      <div class="projects">
+      <div class="projects column" id="projects">
         <h1>Mis proyectos</h1>
-        <p>Mis futoros proyectos</p>
+        <div class="row">
+          <p>Mis futoros proyectos</p>
+        </div>
       </div>
-      <div class="contact">
+      <div class="contact" id="contact">
         <h1>Contacto</h1>
         <p>Contacto</p>
       </div>
