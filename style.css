@@ -5,6 +5,14 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+h1,
+h2 {
+  font-size: 35px;
+  display: flex;
+  align-items: start;
+}
+
 .wrapper {
   width: 100%;
   height: 100vh;
@@ -39,12 +47,21 @@ html {
   gap: 100px;
 }
 
+.button a:hover {
+  border-bottom: 2px solid blue;
+}
+
 .home {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   background-color: #242342;
+}
+
+.home img {
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .skills {
@@ -54,6 +71,7 @@ html {
   display: flex;
   align-items: center;
 }
+
 .about_me {
   width: 100%;
   background-color: rgb(240, 228, 211);
@@ -75,26 +93,24 @@ html {
   text-align: center;
 }
 
-.about_me h1 {
-  font-size: 35px;
-  display: flex;
-  align-items: start;
-}
 .column {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+
 .row {
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
+
 .projects {
   width: 100%;
   height: 250px;
   background-color: pink;
 }
+
 .contact {
   width: 100%;
   height: 250px;
@@ -112,9 +128,11 @@ html {
 .fa-square-js {
   color: yellow;
 }
+
 .fa-python {
   color: lightskyblue;
 }
+
 .fa-html5 {
   color: orange;
 }
