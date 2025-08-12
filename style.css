@@ -15,7 +15,7 @@ h2 {
 
 .wrapper {
   width: 100%;
-  height: 100vh;
+
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -25,9 +25,6 @@ h2 {
 .header_sticky {
   position: sticky;
   top: 0;
-  width: 100%;
-  height: 300px;
-  background-color: red;
   display: flex;
 }
 
@@ -36,7 +33,7 @@ h2 {
   width: 100%;
   height: 100px;
   display: flex;
-  color: white;
+  color: black;
   justify-content: center;
 }
 
@@ -48,7 +45,13 @@ h2 {
 }
 
 .button a:hover {
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid #c9a66b;
+}
+
+.button a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
 }
 
 .home {
@@ -67,7 +70,7 @@ h2 {
 .skills {
   width: 100%;
 
-  background-color: azure;
+  background-color: rgb(220, 197, 178);
   display: flex;
   align-items: center;
 }
@@ -82,8 +85,9 @@ h2 {
 
 .about_me img {
   width: 300px;
-  border: 10px solid red;
+  border: 10px solid #c9a66b;
   border-radius: 50px;
+  margin-bottom: 30px;
 }
 
 .about_me p {
@@ -91,6 +95,7 @@ h2 {
   display: flex;
   align-items: center;
   text-align: center;
+  color: #2b2b2b;
 }
 
 .column {
@@ -103,22 +108,30 @@ h2 {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  align-items: center;
 }
 
 .projects {
   width: 100%;
-  height: 250px;
-  background-color: pink;
+  background-color: rgb(220, 197, 178);
+}
+
+.projects img {
+  width: 300px;
+  border: 10px solid #c9a66b;
+  border-radius: 50px;
+  margin-bottom: 30px;
 }
 
 .contact {
   width: 100%;
-  height: 250px;
-  background-color: violet;
+  background-color: rgb(217, 162, 153);
+  color: #2b2b2b;
 }
 
 .fa-brands {
   font-size: 150px;
+  padding: 30px;
 }
 
 .fa-css3-alt {
@@ -135,4 +148,13 @@ h2 {
 
 .fa-html5 {
   color: orange;
+}
+.fa-instagram {
+  color: rgb(101, 18, 233);
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(217, 162, 153);
+  color: #2b2b2b;
 }
