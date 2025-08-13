@@ -13,15 +13,19 @@
   <body>
     <div class="wrapper">
       <header class="header_sticky">
-        <div class="nav_bar">
-          <div class="button">
-            <a href="#home" class="home_button">Home</a>
-            <a href="#about_me" class="about_me_button">About Me</a>
-            <a href="#skills" class="skills_button">Skills</a>
-            <a href="#projects" class="projects_button">Projects</a>
-            <a href="#contact" class="contact_button">Contact</a>
-          </div>
-        </div>
+        <nav class="nav_bar">
+          <input type="checkbox" id="menu" class="hamburger_check" checked />
+          <label for="menu" class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <ul class="button">
+            <li><a href="#home" class="home_button">Home</a></li>
+            <li><a href="#about_me" class="about_me_button">About Me</a></li>
+            <li><a href="#skills" class="skills_button">Skills</a></li>
+            <li><a href="#projects" class="projects_button">Projects</a></li>
+            <li><a href="#contact" class="contact_button">Contact</a></li>
+          </ul>
+        </nav>
       </header>
       <div class="home" id="home">
         <img src="img/imagen_header.png" alt="header" />
@@ -29,7 +33,7 @@
       <div class="about_me" id="about_me">
         <div class="column">
           <h1>Franco Dominguez</h1>
-          <div class="row">
+          <div class="row flex_wrap">
             <img src="img/franco_ia.png" alt="Imagen" />
             <p>
               Tengo 27 años, soy estudiante de programacion y busco descubrir
